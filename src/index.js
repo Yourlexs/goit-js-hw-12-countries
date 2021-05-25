@@ -8,6 +8,9 @@ refs.input.addEventListener('input', debounce(onShowCountries, 500));
 
 function onShowCountries(e) {
     let searchQuery = e.target.value;
+    if(searchQuery === ' '){
+        return;
+    }
     if (!searchQuery) {
         refs.countriesCountainer.innerHTML = '';
         return;
