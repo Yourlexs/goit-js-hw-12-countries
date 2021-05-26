@@ -4,8 +4,8 @@ import '@pnotify/core/dist/BrightTheme.css';
 
 import { defaults } from '@pnotify/core';
 
-defaults.delay = 1000;
+defaults.delay = 2000;
 
-const { alert, notice, info, success, error } = require('@pnotify/core');
+const { error } = require('@pnotify/core');
 
 export default error;
